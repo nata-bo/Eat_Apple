@@ -11,15 +11,17 @@ export default function Apple(): JSX.Element {
 
   const [isClicked, setIsClicked] = useState(false);
 
+   const btnName:string = isClicked ? "Eaten apple" : "Eat apple";
+   const picName:string = isClicked ? "https://avatarko.ru/img/avatar/1/Apple.jpg":"https://avatarko.ru/img/avatar/32/frukt_yabloko_31880.jpg"
+
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
   return (
     <>
       <h2>{isClicked ? "New apple" : "Apple"}</h2>
-      <button type="button" onClick={handleClick}>
-        {isClicked ? "Eaten apple" : "Eat apple"}
-      </button>
+      <button type="button" onClick={handleClick}>{btnName};</button>
+      <img width="150px" src={picName} alt="Картинка яблока" />
     </>
   );
 }
