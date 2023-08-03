@@ -12,7 +12,7 @@ export default function Apple(): JSX.Element {
   const [isClicked, setIsClicked] = useState(false);
 
    const btnName:string = isClicked ? "Eaten apple" : "Eat apple";
-   const picName:string = isClicked ? "https://avatarko.ru/img/avatar/1/Apple.jpg":"https://avatarko.ru/img/avatar/32/frukt_yabloko_31880.jpg"
+   const picName:string = isClicked ? "https://avatarko.ru/img/avatar/30/frukt_yabloko_planeta_29389.jpg":"https://avatarko.ru/img/avatar/9/frukt_yabloko_8434.jpg"
 
   const handleClick = () => {
     setIsClicked(!isClicked);

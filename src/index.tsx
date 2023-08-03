@@ -13,10 +13,11 @@ const root = ReactDOM.createRoot(
 root.render(
   //<React.StrictMode>
   <>
-      <Apple />
+     
       {/* <App /> */}
-      <Message />
+      <Message msg='hello from index' title='My msg is'/>
       <Counter />
+      <Apple />
       
   </>
     
